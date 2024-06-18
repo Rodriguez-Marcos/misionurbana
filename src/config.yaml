@@ -1,22 +1,19 @@
 site:
-  name: AstroWind
+  name: Mision urbana
   site: 'https://astrowind.vercel.app'
   base: '/'
-  trailingSlash: false
-
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Misión urbana
+    template: '%s — Misión urbana'
+  description: "\U0001F680 Mision urbana"
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Misión urbana
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -26,10 +23,6 @@ metadata:
     handle: '@onwidget'
     site: '@onwidget'
     cardType: summary_large_image
-
-i18n:
-  language: en
-  textDirection: ltr
 
 apps:
   blog:
