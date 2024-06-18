@@ -1,16 +1,28 @@
 export const headerData = {
   links: [
     {
-      text: 'Widgets',
-      href: '#',
+      text: '¿Qué es la Misión Urbana?',
+      href: '#que-es',
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: '¿Donde estamos?',
+      href: '#donde-estamos',
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: '¿Con cuantos trabajamos?',
+      href: '#con-cuantos-trabajamos',
+    },
+    {
+      text: 'Dificultades y fortalezas',
+      href: '#dificultades-y-fortalezas',
+    },
+    {
+      text: '¿Por qué oramos?',
+      href: '#por-que-oramos',
+    },
+    {
+      text: 'Sumate a la Misión Urbana',
+      href: '#sumate',
     },
   ],
   actions: [],
