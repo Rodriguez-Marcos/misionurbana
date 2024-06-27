@@ -1,6 +1,6 @@
 site:
   name: Mision urbana
-  site: 'https://astrowind.vercel.app'
+  site: 'https://misionurbana.vercel.app/'
   base: '/'
 
 # Default SEO metadata
