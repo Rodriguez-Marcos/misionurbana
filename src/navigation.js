@@ -4,10 +4,10 @@ export const headerData = {
       text: '¿Qué es la Misión Urbana?',
       href: '#que-es',
     },
-    {
+    /* {
       text: '¿Donde estamos?',
       href: '#donde-estamos',
-    },
+    }, */
     {
       text: '¿Con cuantos trabajamos?',
       href: '#con-cuantos-trabajamos',

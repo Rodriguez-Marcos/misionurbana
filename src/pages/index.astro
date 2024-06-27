@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
-import Features from '~/components/widgets/Features.astro';
+//import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import BePart from '~/components/widgets/BePart.astro';
 import { Icon } from 'astro-icon/components';
@@ -27,7 +27,6 @@ const metadata = {
       },
       { text: 'Saber más', href: '#donde-estamos' },
     ]}
-    image={{ src: '~/assets/images/logo.jpg', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       ¿Qué es la
@@ -36,24 +35,26 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="block sm:block">
-        <span class="font-bold">Misión Urbana</span> Es el lugar donde compartimos el amor de Jesús con otros.
+        <span class="font-bold">Misión Urbana</span> Es un proyecto del Equipo de Misiones destinado a trabajar con los niños
+        de La Favelita (Villa Urquiza).
       </span>
       <br />
-      Lo hacemos porque tenemos la convicción que a su tiempo lo que estamos sembrando en cada niño va a dar sus frutos.
-      Nuestro mayor anhelo es que puedan aprender a vivir con Jesús y tener esperanza a pesar de lo que les toque vivir.
+      Lo hacemos porque tenemos la convicción de que estamos sembrando la semilla de la palabra de Dios en cada niño, y creemos
+      que a su debido tiempo veremos sus frutos. Nuestro mayor anhelo, es que conozcan a Jesús y que tengan esperanza, a
+      pesar del contexto en el que les toca vivir.
     </Fragment>
   </Hero>
 
   <!-- Features Widget *************** -->
 
-  <Features id="donde-estamos" tagline="¿Donde estamos?" title='Estamos ubicados en "Duarte de Meneses" al 5023' />
+  <!-- <Features id="donde-estamos" tagline="¿Donde estamos?" title='Estamos ubicados en "Duarte de Meneses" al 5023' /> -->
 
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
     id="con-cuantos-trabajamos"
-    tagline="¿Con cuántos niños Trabajamos?"
+    tagline="¿Que Hacemos?"
     subtitle=""
     image={{
       src: '~/assets/images/grupal.jpg',
@@ -62,15 +63,17 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Trabajamos aproximadamente con 40 niños todos los sábados,
+        Trabajamos aproximadamente con 40 niños todos los sábados
       </h3>
-      y en las celebraciones espaciales aumenta el número de niños Les damos un rico desayuno, compartimos una reflexión
-      bíblica, actividades relacionadas a la reflexión y después les damos el almuerzo.
+      Cada sábado, compartimos el mensaje de Jesús a los niños de la Favelita. Se suman a nuestras actividades, aproximadamente
+      40 niños, pero en celebraciones especiales, el número es mayor. La jornada comienza con un rico desayuno, luego compartimos
+      una reflexión acorde a cada edad, actividades y juegos conforme lo enseñado y finalizamos con el almuerzo. Cada sábado,
+      nos preparamos para dar muchos abrazos, cariño y atención.
     </Fragment>
     <Fragment slot="content"> <div class="font-bold mt-2">También tenemos un grupo de Alfabetización!!</div></Fragment>
     <Fragment slot="content"
-      >Desde el año pasado empezamos a trabajar con personas adultas en el área de alfabetización, enseñándoles a leer y
-      escribir.
+      >Además de trabajar con niños, comenzamos con la alfabetización de adultos, mayormente las mamás que se sumaban a
+      las actividades. A través del método Alfalit, estamos enseñando a leer y escribir a los mayores..
     </Fragment>
 
     <Fragment slot="bg">
@@ -83,19 +86,19 @@ const metadata = {
   <Content
     id="dificultades-y-fortalezas"
     isAfterContent
-    tagline="Dificultades y fortalezas con las que nos encontramos"
+    tagline="DIFICULTADES Y FORTALEZAS CON LAS QUE NOS ENCONTRAMOS"
     image={{
       src: '~/assets/images/grupal2.jpg',
       alt: 'Blueprint Image',
     }}
   >
     <Fragment slot="content"
-      >Dentro de las dificultades encontramos el estado en el que se encuentra el barrio, las condiciones en las que
-      viven los niños, la falta de recursos que tienen, falta de agua potable, de higiene, la violencia del entorno en
-      el que viven. Pero dentro de las dificultades más grande podemos mencionar qué una gran parte de ellos no asisten
-      al colegio. Como encontramos dificultades también encontramos FORTALEZAS Son niños abiertos no solo a recibir
-      comida o recursos materiales, sino que también están predispuestos a recibir amor, escuchar la palabra de Dios ,
-      jugar y cantar con nosotros. Ellos nos cuidan y nos respetan ❤
+      >Al ser un asentamiento, encontramos dificultades tales como el estado en el que se encuentra el barrio, las
+      condiciones en las que viven los niños, la escasez de recursos, como la falta de agua potable y de servicios
+      esenciales, de higiene y la violencia propia del entorno en el que viven. Sin embargo, la mayor problemática es
+      que una gran parte de ellos no asisten al colegio. No obstante, son muchas las fortalezas presentes, ya que son
+      niños abiertos, no solo a recibir comida o recursos materiales, sino que también están predispuestos a recibir
+      amor, escuchar la palabra de Dios, jugar y cantar con nosotros. Ellos nos cuidan y nos respetan ❤
     </Fragment>
 
     <Fragment slot="bg">
@@ -109,19 +112,33 @@ const metadata = {
     id="por-que-oramos"
     isReversed
     isAfterContent
-    tagline="¿Por qué oramos?"
+    tagline="¿POR QUÉ ORAMOS?"
     image={{
       src: '~/assets/images/ornado.jpg',
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot="content">
-      Oramos por cada familia, por el barrio, por los dirigentes del barrio, por sus mejoras, por los niños, por la
-      educación de cada uno de los niños, para que Jesús siempre reine en sus corazones, para que lo único que ellos
-      reciban sea amor y no violencia, para que cada palabra que damos cada sábado quede atesorada en sus corazones Por
-      los profes que van cada sábado, que puedan transmitir el amor de Jesús en cada niño. Por la alfabetización, que
-      sea un puente, que a través de cada clase podamos llegar a las personas adultas con el mensaje de salvación.
-    </Fragment>
+    <span slot="content" style="display: block; margin-bottom: 1rem;"
+      ><span class="font-bold">-POR LA FAVELITA:</span> Oramos por cada familia, por el barrio y su crecimiento urbano y
+      estructural, por sus dirigentes. Que el amor de Jesús llegue a cada persona, trayendo cambios radicales en su manera
+      de vivir.</span
+    >
+    <span slot="content" style="display: block; margin-bottom: 1rem;"
+      ><span class="font-bold">-POR LOS NIÑOS:</span> por su educación y crecimiento integral, para que Jesús siempre reine
+      en sus corazones. Para que lo único que ellos reciban sea amor y no violencia. Declaramos que serán grandes hombres
+      y mujeres de Dios.</span
+    >
+    <span slot="content" style="display: block; margin-bottom: 1rem;"
+      ><span class="font-bold">-POR LAS ACTIVIDADES </span>DE CADA SÁBADO: para que la palabra que damos cada sábado,
+      quede atesorada en los corazones de los niños y de frutos.</span
+    >
+    <span slot="content" style="display: block; margin-bottom: 1rem;"
+      ><span class="font-bold">-POR LOS PROFES:</span> que puedan transmitir el amor de Jesús y su palabra en cada niño.</span
+    >
+    <span slot="content" style="display: block; margin-bottom: 1rem;"
+      ><span class="font-bold">-POR LA ALFABETIZACIÓN:</span> Para que los alfabetizadores puedan transmitir sus conocimientos
+      de forma productiva y que el proyecto sea un puente, para que se llegue a las personas adultas con el mensaje de salvación.</span
+    >
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -130,20 +147,20 @@ const metadata = {
 
   <!-- Steps Widget ****************** -->
 
-  <BePart id="sumate" tagline="Sumate a la Misión Urbana" title="¿Como podes ser parte de la Misión Urbana?">
+  <BePart id="sumate" tagline="Sumate a la Misión Urbana" title="¿Cómo puedo ser parte?">
     <Fragment slot="subtitle">
       <ul class="list-inside text-start list-none">
         <li class="flex justify-start">
           <Icon name="tabler:chevron-right" class={'flex-shrink-0 mt-1 w-6 h-6 text-primary'} />Formando parte de el
-          equipo que trabaja todos los Sábados en La Favela (Villa Urquiza)
+          Formando parte del equipo que trabaja todos los sábados en La Favela (Villa Urquiza).
         </li>
         <li class="flex justify-start">
           <Icon name="tabler:chevron-right" class={'flex-shrink-0 mt-1 w-6 h-6 text-primary'} />Colaborando con recursos
-          formando parte de Los Amigos de la Misión Urbana
+          Colaborando con recursos, sumándote a “Los Amigos de la Misión Urbana”.
         </li>
         <li class="flex justify-start">
           <Icon name="tabler:chevron-right" class={'flex-shrink-0 mt-1 w-6 h-6 text-primary'} />Orando por La Misión
-          Urbana
+          Urbana.
         </li>
         <li class="flex justify-start">
           <Icon name="tabler:chevron-right" class={'flex-shrink-0 mt-1 w-6 h-6 text-primary'} />
